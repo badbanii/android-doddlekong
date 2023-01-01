@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.tuly.doodlekong.databinding.FragmentCreateRoomBinding
-import com.tuly.doodlekong.databinding.FragmentSelectRoomBinding
 
 class CreateRoomFragment: Fragment() {
     private var _binding: FragmentCreateRoomBinding? =null
