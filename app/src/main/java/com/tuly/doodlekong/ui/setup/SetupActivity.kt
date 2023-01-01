@@ -1,12 +1,17 @@
 package com.tuly.doodlekong.ui.setup
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.tuly.doodlekong.R
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+import com.tuly.doodlekong.databinding.ActivitySetupBinding
 
 class SetupActivity : AppCompatActivity() {
+
+    private lateinit var binding:ActivitySetupBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_setup)
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        binding= ActivitySetupBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 }
